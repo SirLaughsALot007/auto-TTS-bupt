@@ -218,7 +218,6 @@ def prepare_all_datasets( language, validation_text_length, validation_audio_len
 
 	messages = []
 	voices = get_voice_list()
-
 	for voice in voices:
 		print("Processing:", voice)
 		message = transcribe_dataset( voice=voice, language=language, skip_existings=skip_existings, progress=progress )

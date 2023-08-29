@@ -1,4 +1,4 @@
 #!/bin/bash
-source ./venv/bin/activate
+conda activate tortoise
 python3 ./src/train.py --yaml "$1"
 deactivate

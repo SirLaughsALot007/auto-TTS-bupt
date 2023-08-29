@@ -1091,7 +1091,7 @@ def generate_tortoise(**kwargs):
 	os.makedirs(outdir, exist_ok=True)
 
 	audio_cache = {}
-
+	# 调整音量，gain大于1增加音量，小于1减小音量，amplitude表示增益将应用于音频的振幅，意味着之际修改音频的振幅值来调整音量，power表示应用于音频的功率
 	volume_adjust = torchaudio.transforms.Vol(gain=args.output_volume, gain_type="amplitude") if args.output_volume != 1 else None
 
 	idx = 0
