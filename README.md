@@ -31,4 +31,5 @@
 -   Trim Segments: 使用TorchAudio的VAD来修剪静音，减小音频文件的实际大小，从而在训练时节省更多的处理时间和VRAM。
 -   Slice Start Offset: 在分割音频文件时偏移起始时间戳。
 -   Slice End Offset: 在分割音频文件时偏移结束时间戳。
+-   Transcribe and Process: 开始转录，同时在必要时进行切片，并分割为训练集和验证集
 -   

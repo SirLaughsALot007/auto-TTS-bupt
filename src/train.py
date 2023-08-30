@@ -58,6 +58,8 @@ if __name__ == "__main__":
         pass
 
     import torch
+    import sys
+    sys.path.append('/home/sjx/Common/vits/ai-voice-cloning')
     from dlas import train as tr
     from dlas.utils import util, options as option
 

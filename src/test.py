@@ -1,4 +1,2 @@
-import sys
-
-sys.path.append('/home/sjx/Common/vits/ai-voice-cloning')
-from dlas import train as tr
+import torch
+print(torch.distributed.get_world_size())
